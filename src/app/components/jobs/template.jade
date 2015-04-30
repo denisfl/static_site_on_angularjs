@@ -1,0 +1,12 @@
+h2.card__title Опыт работы
+article.card__item(ng-repeat="job in me.jobs")
+  .card-item__head
+    span {{ job.position }}
+    |,
+    = ' '
+    span {{ job.company }}
+    = ' '
+    | &mdash;
+    = ' '
+    span {{ job.time }}
+  .card-item__description {{ job.role }}

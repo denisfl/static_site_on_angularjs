@@ -1,0 +1,26 @@
+.card {
+  display: block;
+  width: 80%;
+  margin: 0 auto 20px;
+  padding: 2rem 2.4rem;
+  background: $card-bg-color;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.17);
+
+  @extend .animated;
+  @extend .flipInX;
+
+}
+
+.card__title {
+  margin-top: 0;
+  font-size: 1.6em;
+}
+
+.card__item {
+  margin: 0 0 1rem 0;
+}
+  .card-item__head {
+    font-style: italic;
+    color: #7E7E7E;
+  }
+  .card-item__description {}

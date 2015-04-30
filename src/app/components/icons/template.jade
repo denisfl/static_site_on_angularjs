@@ -1,0 +1,5 @@
+ul.icons-list
+  li.icons-item(ng-repeat="icon in icons")
+    a.icons-item__link(href="{{icon.link}}")
+      span(class='icons-item__icon icon-{{icon.name}}')
+      span.icons-item__text {{icon.name}}

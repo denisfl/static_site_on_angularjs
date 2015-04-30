@@ -1,0 +1,118 @@
+@import "../assets/stylesheets/fonts.scss";
+
+@mixin breakpoint($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content
+  }
+}
+
+$breakpoint-sm: 680px;
+$breakpoint-md: 960px;
+$breakpoint-lg: 1280px;
+
+$sidebar-bg-color: #3A4149;
+$body-bg-color: #f2f2f2;
+$card-bg-color: white;
+
+
+$sidebar-width: (
+  mobile: 80%,
+  tablet: 25%,
+  desktop: 300px
+);
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: $body-bg-color;
+  color: #333;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+html,
+body,
+.app-layout {
+  height: 100vh;
+
+}
+
+
+.app-main {
+  position: relative;
+  z-index: 2;
+  padding: 30px 0;
+  background: $body-bg-color;
+
+  transition: transform .3s ease-in-out;
+
+  @include breakpoint($breakpoint-sm) {
+    margin-left: map-get($sidebar-width, tablet);
+  }
+  @include breakpoint($breakpoint-md) {
+    margin-left: map-get($sidebar-width, desktop);
+  }
+
+
+  &.active {
+    //transform: translateX(map-get($sidebar-width, mobile));
+    transform: translate(map-get($sidebar-width, mobile), 0);
+  }
+}
+
+
+
+@keyframes flipInX {
+  0% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transition-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transition-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  100% {
+    transform: perspective(400px);
+  }
+}
+
+.flipInX {
+  backface-visibility: visible;
+  animation-name: flipInX;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+
+/* Do not remove this comments bellow. It's the markers used by gulp-inject to inject
+   all your sass files automatically */
+// injector
+// endinjector
+
+

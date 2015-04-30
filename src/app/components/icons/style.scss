@@ -1,0 +1,58 @@
+icons {
+  &[icons="socials"] {
+    display: none;
+
+    @include breakpoint($breakpoint-sm) {
+      display: block;
+    }
+  }
+}
+
+.icons-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+
+  @include breakpoint($breakpoint-sm) {
+    text-align: left;
+  }
+}
+
+.icons-item {
+  display: inline-block;
+  width: 50%;
+
+  @include breakpoint($breakpoint-sm) {
+    display: list-item;
+    width: auto;
+  }
+}
+
+.icons-item__link {
+  display: inline-block;
+  padding: 5px 0;
+  color: #3C7ABA;
+  text-decoration: none;
+  font-size: 2em;
+  transition: color .3s ease-in-out;
+
+  @include breakpoint($breakpoint-sm) {
+    color: #C4CED8;
+    font-size: 1.2em;
+  }
+  @include breakpoint($breakpoint-md) {
+    font-size: 1em;
+  }
+
+  &:hover {
+
+    @include breakpoint($breakpoint-sm) {
+      color: white;
+    }
+  }
+}
+
+.icons-item__text {
+  padding-left: 5px;
+}

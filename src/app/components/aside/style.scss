@@ -1,0 +1,26 @@
+app-sidebar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  width: map-get($sidebar-width, mobile);
+  overflow-y: auto;
+  z-index: 1;
+
+
+
+  @include breakpoint($breakpoint-sm) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 30px;
+    width: map-get($sidebar-width, tablet);
+    color: white;
+    background: $sidebar-bg-color;
+  }
+
+  @include breakpoint($breakpoint-md) {
+    width: map-get($sidebar-width, desktop);
+  }
+}

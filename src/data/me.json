@@ -1,0 +1,66 @@
+{
+  "name": "Денис",
+  "family": "Федосов-Ледовских",
+  "description": "Ответственный, организованный. Могу сверстать все что угодно.",
+  "jobs": [
+    {
+      "position": "Фронт­енд разработчик",
+      "company": "Passenger.me",
+      "time": "2014 — по настоящий момент",
+      "role": "Участие в проекте в роли верстальщика."
+    },
+    {
+      "position": "Фронт­енд разработчик",
+      "company": "Progress Engine",
+      "time": "2012—2014",
+      "role": "Организовал и управлял отделом фронтенд разработки. Принимал участие в разработке проектов для Zeptolab, Martini, Pruffi, HomeCreditBank, Morton."
+    },
+    {
+      "position": "Аутсорс услуг по разработке сайтов",
+      "company": "",
+      "time": "2006—2012",
+      "role": "Самозанятость, Аутсорс услуг по разработке сайтов."
+    }
+  ],
+  "education": "Волгоградский государственный педагогический университет, специальность: физика­информатика. 2001—2006.",
+  "skills": [
+    {"name": "Adobe Photoshop и Sketch"},
+    {"name": "HTML, CSS (2, 3)"},
+    {"name": "Препроцессоры (Sass / Scss). Поверхностно знаком с Less и Stylus"},
+    {"name": "Шаблонизаторы (Slim, Haml, Jade)"},
+    {"name": "Css­фреймворки (Bootstrap, Foundation)"},
+    {"name": "Системы сборки (Brunch, GruntJS, GulpJS, Yeoman, Middleman)"},
+    {"name": "Native JavaScript и jQuery"},
+    {"name": "Начальные знания AngularJS"},
+    {"name": "Система управления версиями файлов Git"}
+  ],
+  "contacts": [
+    {
+      "name": "skype",
+      "title": "denisfedosov",
+      "link": "skype:denis.fedosov?chat"
+    },
+    {
+      "name": "mail",
+      "title": "denis.a.fedosov@gmail.com",
+      "link": "mailto:denis.a.fedosov@gmail.com"
+    }
+  ],
+  "socials": [
+    {
+      "name": "github",
+      "title": "denisfl",
+      "link": "https://github.com/denisfl"
+    },
+    {
+      "name": "twitter",
+      "title": "denisfedosov",
+      "link": "https://twitter.com/denisfedosov"
+    },
+    {
+      "name": "facebook",
+      "title": "denis.fedosov",
+      "link": "https://www.facebook.com/denis.fedosov"
+    }
+  ]
+}
